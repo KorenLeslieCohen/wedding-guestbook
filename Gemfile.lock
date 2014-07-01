@@ -63,5 +63,5 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-activerecord
-  sqlite3
+  sqlite3 (= 1.3.9)
   thin
