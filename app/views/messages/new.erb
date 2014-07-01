@@ -5,27 +5,25 @@
 </head>
 <body>
   <center>
-    <header>
-      <h1>Ali<span>&</span>Ryan</h1>
-      <h2>Sign</h2>
-      <% if @message && @message.errors.any? %>
-        <% @message.errors.full_messages.each do |message| %>
-          <p><%= message %></p>
-        <% end %>
+    <h1>Ali<span>&</span>Ryan</h1>
+    <h2>Sign</h2>
+    <% if @message && @message.errors.any? %>
+      <% @message.errors.full_messages.each do |message| %>
+        <p><%= message %></p>
       <% end %>
-      <form action='/messages' method="post">
-        <p>
-          <label>Name</label></br>
-          <input type="text" name="message[name]" value="<%= @message.name %>" class="box"/>
-        </p>
-        <p>
-          <label>Message</label></br>
-          <textarea name="message[content]" class="box"><%= @message.content %></textarea>
-        </p>
-        <button type="submit">Sign Guestbook</button>
-      </form>
-      <a href="/">Home</a>
-    </header>
+    <% end %>
+    <form action='/messages' method="post">
+      <p>
+        <label>Name</label></br>
+        <input type="text" name="message[name]" value="<%= @message.name %>" class="box"/>
+      </p>
+      <p>
+        <label>Message</label></br>
+        <textarea name="message[content]" class="box"><%= @message.content %></textarea>
+      </p>
+      <button type="submit">Sign Guestbook</button>
+    </form>
+    <a href="/">Home</a>
   </center>
 </body>
 </html>
