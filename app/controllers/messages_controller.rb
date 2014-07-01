@@ -18,11 +18,6 @@ class MessagesController < ApplicationController
     erb :"messages/show"
   end
 
-  get '/messages/:id/delete' do 
-    @message = Message.find(params[:id])
-    @message.destroy
-  end
-
   post '/messages' do 
     @message = Message.new(strong_params)
     if @message.save
