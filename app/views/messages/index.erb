@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <center>
+    <header>
+      <h1>Ali<span>&</span>Ryan</h1>
+      <h4>are getting married!</h4>
+      <img src="http://www.clker.com/cliparts/Z/X/r/e/b/d/black-bow-ribbon-hi.png" height="300"></br>
+      <a href="#body"><img src="http://static.wixstatic.com/media/ad05fe_a61b9723a1199d002b850b26fe243477.png_srz_80_50_85_22_0.50_1.20_0.00_png_srz"></a>
+    </header>
+    <div id="body">
+
+      <h2>Guestbook</h2>
+      <div class="sign">
+        </br></br></br></br>
+        <a href="/messages/new"><img src="http://www.clker.com/cliparts/Z/X/r/e/b/d/black-bow-ribbon-hi.png" height="50"></a></br>
+        <a href="/messages/new">sign</a>
+      </div>
+      <div class="messages">
+        <h3>Messages</h3>
+        <% @messages.each do |message| %>
+          <p><a href="/messages/<%= message.id %>"><%= message.name %></a></p>
+        <% end %>
+        <p>with <img src="http://www.edu.buncee.com/files/uploads/image/heart_icon_deselected_ocal_favorites_icon_unselected_black_white_line_coloring_book_colouring.png" height="20"> from <a href="http://twitter.com/korenlc" target="_blank">@korenlc</a></p>
+      </div>
+    </div>
+  </center>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script>
+        // scroll to anchors element script
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $( $(this).attr('href') );
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+      </script>
+</body>
+</html>
+

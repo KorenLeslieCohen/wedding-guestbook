@@ -1,0 +1,111 @@
+@import url('http://fonts.googleapis.com/css?family=Rochester');
+
+header {
+  background-image: url("http://takeinsocialmedia.com/wp-content/uploads/2014/04/pink-flower-petals-images-photos-0322194653.jpg");
+  background-size: cover;
+  height: 750px;
+}
+
+h1 {
+  color: #50E1E1;
+  font-family: 'Rochester';
+  font-size: 200px;
+  margin: 0em;
+  padding: none;
+}
+
+h1 span {
+  color: black;
+  margin: 0em;
+}
+
+h4 {
+  font-family: 'Rochester';
+  font-size: 30px;
+  margin-top: 0em;
+}
+
+.sign {
+  height: 200px;
+  width: 200px;
+  background-color: #50E1E1;
+  border-radius: 100px;
+}
+
+#body p {
+  font-size: 20px;
+}
+
+h2, 
+h3,
+h5 {
+  font-family: 'Rochester';
+  margin: 0em;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3,
+h5 {
+  font-size: 65px;
+}
+
+.note p {
+  font-family: arial;
+  font-size: 40px;
+  color: #FC9FC6;
+}
+
+.note a {
+  margin-top: 100px;
+}
+
+a,
+a:visited {
+  font-family: arial;
+  color: #50E1E1;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Rochester';
+  transition-duration: .5s;
+}
+
+a:hover{
+  color: black;
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+.sign a,
+.sign a:visited {
+  color: black;
+}
+
+.sign a:hover {
+  color: white;
+}
+
+.messages a {
+  font-size: 60px;
+}
+
+.box {
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  font-family: arial;
+}
+
+
+button {
+  border-radius: 5px;
+  width: 225px;
+  font-size: 20px;
+  font-family: arial;
+  font-family: 'Rochester';
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
