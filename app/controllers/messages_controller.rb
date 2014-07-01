@@ -18,8 +18,13 @@ class MessagesController < ApplicationController
     erb :"messages/show"
   end
 
+  get '/messages/:id/delete' do 
+    @message = Message.find(params[:id])
+    @message.destroy
+  end
+
   post '/messages' do 
-    @message = Message.new(params[:message])
+    @message = Message.new(strong_params)
     if @message.save
       redirect to("/messages/#{@message.id}")
     else
@@ -27,6 +32,14 @@ class MessagesController < ApplicationController
     end
   end
 
+  def strong_params
+    params[:message].each_with_object({}) do |pair,hash|
+      hash[html_safe(pair[0])] = html_safe(pair[1])
+    end
+  end
 
+  def html_safe(text)
+    Rack::Utils.escape_html(text)
+  end
 
 end
