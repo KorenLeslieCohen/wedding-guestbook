@@ -1,6 +1,6 @@
 # Wedding Guestbook
 
-Wedding Guestbook is an online guestbook where guests can leave personalized messafes for the happy couple.
+Wedding Guestbook is an online guestbook where guests can leave personalized messages for the happy couple.
 
 <a href="http://whispering-bastion-3471.herokuapp.com/" target="_blank"><img src="http://www.korenlc.com/wp-content/uploads/2014/06/guestbook-1024x570.png"></a>
 
